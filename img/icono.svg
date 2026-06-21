@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="16" fill="#172116"></rect>
+  <path d="M14 31.5 32 16l18 15.5v17A3.5 3.5 0 0 1 46.5 52h-29A3.5 3.5 0 0 1 14 48.5Z" fill="#f8f6f0"></path>
+  <path d="M27 52V38h10v14" fill="#b6a060"></path>
+  <text x="32" y="29" text-anchor="middle" font-size="15">🐺</text>
+</svg>

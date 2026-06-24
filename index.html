@@ -1,337 +1,822 @@
 <!DOCTYPE html>
 <html lang="es-MX">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Casa Lobos: un espacio privado en la zona rural del Valle de Ensenada para descanso, convivencia y momentos especiales." />
-  <meta name="theme-color" content="#172116" />
-  <title>Casa Lobos | Valle de Ensenada</title>
-  <link rel="icon" type="image/svg+xml" href="img/icono.svg" />
-
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <a class="skip-link" href="#contenido">Saltar al contenido</a>
-
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="Casa Lobos: un espacio privado en la zona rural del Valle de Ensenada para descanso, convivencia y momentos especiales." data-i18n-content="metaDescription" id="pageDescription" name="description"/>
+  <meta content="#172116" name="theme-color"/>
+  <title data-i18n="documentTitle">
+   Casa Lobos | Valle de Ensenada
+  </title>
+  <link href="img/icono.svg" rel="icon" type="image/svg+xml"/>
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,600&amp;display=swap" rel="stylesheet"/>
+  <link href="style.css" rel="stylesheet"/>
+ </head>
+ <body>
+  <a class="skip-link" data-i18n="skipLink" href="#contenido" id="skipLink">
+   Saltar al contenido
+  </a>
   <header class="site-header" id="inicio">
-    <nav class="nav container" aria-label="Navegación principal">
-      <a class="brand" href="#inicio" aria-label="Casa Lobos, inicio">
-        <span class="brand-mark" aria-hidden="true">C</span>
-        <span>CASA <em>LOBOS</em></span>
-      </a>
-
-      <button class="menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu-principal">
-        <span></span><span></span><span></span>
+   <nav aria-label="Navegaci&oacute;n principal" class="nav container" data-i18n-aria-label="navAria">
+    <a aria-label="Casa Lobos, inicio" class="brand" data-i18n-aria-label="brandAria" href="#inicio">
+     <span aria-hidden="true" class="brand-mark">
+      C
+     </span>
+     <span>
+      CASA
+      <em>
+       LOBOS
+      </em>
+     </span>
+    </a>
+    <div class="nav-links" id="menu-principal">
+     <a data-i18n="navPlace" href="#espacio">
+      El lugar
+     </a>
+     <a data-i18n="navGallery" href="#galeria">
+      Galer&iacute;a
+     </a>
+     <a data-i18n="navAmenities" href="#equipamiento">
+      Equipamiento
+     </a>
+     <a data-i18n="navLocation" href="#ubicacion">
+      Ubicaci&oacute;n
+     </a>
+     <a data-i18n="navGuardians" href="#guardianes">
+      Guardianes
+     </a>
+     <a data-i18n="navRules" href="#reglas">
+      Reglas
+     </a>
+     <a data-i18n="navContact" href="#contacto">
+      Contacto
+     </a>
+    </div>
+    <div class="nav-controls">
+     <button aria-label="Cambiar el idioma a ingl&eacute;s" aria-pressed="false" class="language-toggle" data-i18n-aria-label="languageToggleAria" id="languageToggle" type="button">
+      <span aria-hidden="true" class="language-icon">
+       ◌
+      </span>
+      <span aria-hidden="true" class="language-toggle-label" id="languageToggleLabel">
+       EN
+      </span>
+     </button>
+     <button aria-controls="menu-principal" aria-expanded="false" aria-label="Abrir men&uacute;" class="menu-toggle" data-i18n-aria-label="menuOpen" type="button">
+      <span>
+      </span>
+      <span>
+      </span>
+      <span>
+      </span>
+     </button>
+    </div>
+   </nav>
+   <section aria-labelledby="titulo-principal" class="hero container">
+    <div class="hero-copy reveal">
+     <p class="eyebrow">
+      <span aria-hidden="true" class="eyebrow-line">
+      </span>
+      <span class="eyebrow-text" data-i18n="heroEyebrow">
+       Valle de Ensenada &middot; Zona rural
+      </span>
+     </p>
+     <h1 id="titulo-principal">
+      <span data-i18n="heroTitleMain">
+       Casa Lobos,
+      </span>
+      <br/>
+      <em data-i18n="heroTitleAccent">
+       un rinc&oacute;n para volver a lo esencial.
+      </em>
+     </h1>
+     <p class="hero-text" data-i18n="heroText">
+      Un espacio privado para convivir, respirar aire libre y disfrutar el ritmo tranquilo del valle. Muy pronto podr&aacute;s solicitar disponibilidad directamente desde aqu&iacute;.
+     </p>
+     <div class="hero-actions">
+      <button aria-disabled="true" class="booking-button is-disabled" id="bookingButton" type="button">
+       <span aria-hidden="true" class="booking-icon">
+        <svg fill="none" viewbox="0 0 24 24">
+         <path d="M7 3v3M17 3v3M4 9h16M5.5 5h13A1.5 1.5 0 0 1 20 6.5v12a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 4 18.5v-12A1.5 1.5 0 0 1 5.5 5Z" stroke="currentColor" stroke-linecap="round" stroke-width="1.7">
+         </path>
+        </svg>
+       </span>
+       <span class="booking-label" data-i18n="bookingSoon">
+        Reservas pr&oacute;ximamente
+       </span>
       </button>
-
-      <div class="nav-links" id="menu-principal">
-        <a href="#espacio">El lugar</a>
-        <a href="#galeria">Galería</a>
-        <a href="#equipamiento">Equipamiento</a>
-        <a href="#ubicacion">Ubicación</a>
-        <a href="#guardianes">Guardianes</a>
-        <a href="#reglas">Reglas</a>
-        <a href="#contacto">Contacto</a>
-      </div>
-    </nav>
-
-    <section class="hero container" aria-labelledby="titulo-principal">
-      <div class="hero-copy reveal">
-        <p class="eyebrow"><span></span> Valle de Ensenada · Zona rural</p>
-        <h1 id="titulo-principal">Casa Lobos,<br><em>un rincón para volver a lo esencial.</em></h1>
-        <p class="hero-text">Un espacio privado para convivir, respirar aire libre y disfrutar el ritmo tranquilo del valle. Muy pronto podrás solicitar disponibilidad directamente desde aquí.</p>
-        <div class="hero-actions">
-          <button class="booking-button is-disabled" id="bookingButton" type="button" aria-disabled="true">
-            <span class="booking-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none"><path d="M7 3v3M17 3v3M4 9h16M5.5 5h13A1.5 1.5 0 0 1 20 6.5v12a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 4 18.5v-12A1.5 1.5 0 0 1 5.5 5Z" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
-            </span>
-            <span class="booking-label">Reservas próximamente</span>
-          </button>
-          <a class="text-link" href="#espacio">Conoce Casa Lobos <span aria-hidden="true">↘</span></a>
-        </div>
-        <p class="availability-note"><span class="status-dot"></span> Estamos preparando todo para recibirte.</p>
-      </div>
-
-      <div class="hero-visual reveal reveal-delay">
-        <div class="hero-photo-wrap">
-          <img class="property-image" src="img/pic1.png" alt="Vista principal de Casa Lobos" data-fallback-label="Foto principal de Casa Lobos" />
-          <div class="photo-overlay"></div>
-          <div class="hero-location-card">
-            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="10" r="2.5" stroke="currentColor" stroke-width="1.6"/></svg>
-            <span>Valle de Ensenada · Zona rural</span>
-          </div>
-        </div>
-        <div class="hero-stamp" aria-hidden="true"><span>CASA LOBOS</span><span>·</span><span>VALLE</span><span>·</span><span>CASA LOBOS</span><span>·</span><span>VALLE</span><span>·</span></div>
-      </div>
-    </section>
-  </header>
-
-  <main id="contenido">
-    <section class="intro section container" id="espacio">
-      <div class="intro-side reveal">
-        <p class="eyebrow"><span></span> El lugar</p>
-        <h2>Respira, comparte<br>y hazlo <em>tuyo.</em></h2>
-      </div>
-      <div class="intro-content reveal reveal-delay">
-        <p class="lead">Casa Lobos es un espacio privado en la zona rural del Valle de Ensenada, pensado para esas reuniones que se disfrutan sin prisas y con el paisaje como parte del plan.</p>
-        <p>Tierra Santa se utiliza por ahora como referencia de la zona. En la sección de ubicación podrás consultar el punto de llegada en Google Maps; al confirmar una reservación se compartirán indicaciones de acceso, capacidad, precios y horarios.</p>
-        <div class="quick-details">
-          <div>
-            <strong>Entorno rural</strong>
-            <span>Aire libre y paisaje del valle</span>
-          </div>
-          <div>
-            <strong>Espacio privado</strong>
-            <span>Convivencia a tu propio ritmo</span>
-          </div>
-          <div>
-            <strong>Reservación previa</strong>
-            <span>Disponibilidad por confirmar</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-    <section class="location-section section" id="ubicacion">
-      <div class="container">
-        <div class="location-card reveal">
-          <div class="location-copy">
-            <p class="eyebrow eyebrow-light"><span></span> Ubicación</p>
-            <h2>Encuentra el camino<br>hacia <em>Casa Lobos.</em></h2>
-            <p>Casa Lobos se encuentra en la zona rural del Valle de Ensenada, cerca de Tierra Santa. Consulta el punto de llegada y planea tu visita con anticipación.</p>
-
-            <div class="location-details" aria-label="Detalles de ubicación">
-              <div>
-                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z" stroke="currentColor" stroke-width="1.65"/><circle cx="12" cy="10" r="2.5" stroke="currentColor" stroke-width="1.65"/></svg>
-                <span>Valle de Ensenada<br><small>Zona rural · Tierra Santa</small></span>
-              </div>
-              <div>
-                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 5h16M4 12h16M4 19h16" stroke="currentColor" stroke-width="1.65" stroke-linecap="round"/><path d="M7 3v4M12 10v4M17 17v4" stroke="currentColor" stroke-width="1.65" stroke-linecap="round"/></svg>
-                <span>Antes de salir<br><small>Confirma acceso y detalles de tu visita</small></span>
-              </div>
-            </div>
-
-            <a class="map-button" href="https://maps.app.goo.gl/JRZmJLSjW2W7Dti9A?g_st=aw" target="_blank" rel="noopener noreferrer" aria-label="Abrir ubicación de Casa Lobos en Google Maps">
-              <span>Ver en Google Maps</span>
-              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </a>
-          </div>
-
-          <div class="location-map" aria-label="Mapa de ubicación de Casa Lobos">
-            <iframe
-              title="Ubicación de Casa Lobos en Google Maps"
-              src="https://www.google.com/maps?q=32.0283165,-116.6355569&z=15&output=embed"
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-              allowfullscreen>
-            </iframe>
-            <a class="map-floating-label" href="https://maps.app.goo.gl/JRZmJLSjW2W7Dti9A?g_st=aw" target="_blank" rel="noopener noreferrer" aria-label="Abrir ubicación en Google Maps">
-              <span class="map-floating-icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none"><path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z" stroke="currentColor" stroke-width="1.7"/><circle cx="12" cy="10" r="2.5" stroke="currentColor" stroke-width="1.7"/></svg>
-              </span>
-              <span><strong>Casa Lobos</strong><small>Abrir ubicación</small></span>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="gallery-section section" id="galeria">
-      <div class="container">
-        <div class="section-heading reveal">
-          <div>
-            <p class="eyebrow"><span></span> Galería</p>
-            <h2>Una primera mirada<br>a <em>Casa Lobos.</em></h2>
-          </div>
-          <p>Estos espacios quedan listos para mostrar los rincones reales del terreno: acceso, áreas de convivencia, vista general y esos atardeceres que hacen especial al valle.</p>
-        </div>
-
-        <div class="gallery-grid">
-          <button class="gallery-item lightbox-trigger gallery-item-large reveal" type="button" data-lightbox-group="gallery" data-image="img/pic1.png" data-caption="Vista general de Casa Lobos">
-            <img class="property-image" src="img/pic1.png" alt="Vista general de Casa Lobos" data-fallback-label="Vista general de Casa Lobos" />
-            <span class="gallery-label">Vista general <i>↗</i></span>
-          </button>
-          <button class="gallery-item lightbox-trigger gallery-item-large reveal" type="button" data-lightbox-group="gallery" data-image="img/pic3.jpeg" data-caption="Garage de Casa Lobos">
-            <img class="property-image" src="img/pic3.jpeg" alt="Vista general de Casa Lobos" data-fallback-label="Vista general de Casa Lobos" />
-            <span class="gallery-label">Garage <i>↗</i></span>
-          </button>
-          <button class="gallery-item lightbox-trigger reveal reveal-delay-1" type="button" data-lightbox-group="gallery" data-image="img/pic2.jpeg" data-caption="Área exterior">
-            <img class="property-image" src="img/pic2.jpeg" alt="Área exterior de Casa Lobos" data-fallback-label="Área exterior" />
-            <span class="gallery-label">Área exterior <i>↗</i></span>
-          </button>
-          <button class="gallery-item lightbox-trigger reveal reveal-delay-2" type="button" data-lightbox-group="gallery" data-image="img/pic5.jpeg" data-caption="Un rincón para convivir">
-            <img class="property-image" src="img/pic5.jpeg" alt="Rincón de convivencia en Casa Lobos" data-fallback-label="Rincón para convivir" />
-            <span class="gallery-label">Rincón especial <i>↗</i></span>
-          </button>
-          <button class="gallery-item lightbox-trigger gallery-item-wide reveal" type="button" data-lightbox-group="gallery" data-image="img/pic4.jpeg" data-caption="Momentos especiales en el valle">
-            <img class="property-image" src="img/pic4.jpeg" alt="Atardecer en Casa Lobos" data-fallback-label="Atardeceres del valle" />
-            <span class="gallery-label">Momentos especiales <i>↗</i></span>
-          </button>
-        </div>
-      </div>
-    </section>
-
-    <section class="amenities section container" id="equipamiento">
-      <div class="amenities-top reveal">
-        <p class="eyebrow"><span></span> Equipamiento</p>
-        <h2>Lo que encontrarás<br>en tu <em>visita.</em></h2>
-        <p>Esta sección queda lista para mostrar con claridad todo lo que se incluye en Casa Lobos. Cuando definan cada detalle real, sustituimos estas descripciones.</p>
-      </div>
-
-      <div class="amenities-grid">
-        <article class="amenity-card reveal">
-          <span class="amenity-number">01</span>
-          <div class="amenity-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M4 20V9l8-5 8 5v11M8 20v-5h8v5" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg></div>
-          <h3>Áreas del terreno</h3>
-          <p>Agrega aquí las zonas disponibles: área principal, jardín, parte techada, salón, terraza o cualquier rincón especial.</p>
-        </article>
-        <article class="amenity-card reveal reveal-delay-1">
-          <span class="amenity-number">02</span>
-          <div class="amenity-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M12 3v18M3 12h18M5.6 5.6l12.8 12.8M18.4 5.6 5.6 18.4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></div>
-          <h3>Convivencia</h3>
-          <p>Mesas, sillas, asador, fogatero, alberca, juegos o cualquier elemento que haga cómoda la reunión.</p>
-        </article>
-        <article class="amenity-card reveal reveal-delay-2">
-          <span class="amenity-number">03</span>
-          <div class="amenity-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M4 19.5 12 4l8 15.5M7.25 14h9.5" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg></div>
-          <h3>Servicios básicos</h3>
-          <p>Incluye información confirmada sobre baño, agua, electricidad, estacionamiento, señal o internet.</p>
-        </article>
-        <article class="amenity-card reveal reveal-delay-3">
-          <span class="amenity-number">04</span>
-          <div class="amenity-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M3 10.5 12 4l9 6.5M5 9v10h14V9M9 19v-5h6v5" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg></div>
-          <h3>Llegada y acceso</h3>
-          <p>Indicaciones de llegada, portón, estacionamiento y puntos importantes se comparten antes de la visita.</p>
-        </article>
-      </div>
-    </section>
-
-    <section class="guardians-section section" id="guardianes">
-      <div class="container guardians-layout">
-        <div class="guardians-copy reveal">
-          <p class="eyebrow"><span></span> Casa Lobos</p>
-          <h2>Conoce a nuestros<br><em>guardianes.</em></h2>
-          <p>Ellos también son parte de Casa Lobos. Al llegar, encontrarás a una hembra y un macho que cuidan el espacio y le dan personalidad al lugar.</p>
-          <p class="guardians-note">Toca cualquier foto para verla completa. Cada guardián cuenta con dos espacios para mostrar sus mejores momentos.</p>
-        </div>
-
-        <div class="guardian-cards">
-          <article class="guardian-card reveal reveal-delay-1">
-            <div class="guardian-photo-grid" aria-label="Fotos de Jesusa">
-              <button class="guardian-image-button lightbox-trigger" type="button" data-lightbox-group="jesusa" data-image="img/loba1.jpeg" data-caption="Jesusa · Casa Lobos · Foto 1" aria-label="Abrir primera foto de Jesusa">
-                <img class="guardian-photo property-image" src="img/loba1.jpeg" alt="Jesusa, guardiana de Casa Lobos, foto 1" data-fallback-label="Primera foto de Jesusa" />
-                <span class="guardian-photo-number" aria-hidden="true">01</span>
-              </button>
-              <button class="guardian-image-button lightbox-trigger" type="button" data-lightbox-group="jesusa" data-image="img/loba2.jpeg" data-caption="Jesusa · Casa Lobos · Foto 2" aria-label="Abrir segunda foto de Jesusa">
-                <img class="guardian-photo property-image" src="img/loba2.jpeg" alt="Jesusa, guardiana de Casa Lobos, foto 2" data-fallback-label="Segunda foto de Jesusa" />
-                <span class="guardian-photo-number" aria-hidden="true">02</span>
-              </button>
-              <span class="guardian-tag">HEMBRA</span>
-            </div>
-            <div class="guardian-card-copy">
-              <p class="guardian-kicker">Nuestra guardiana</p>
-              <h3>Jesusa</h3>
-              <p>Una de las anfitrionas de Casa Lobos. Sus dos fotos se pueden abrir a tamaño completo para conocerla mejor.</p>
-            </div>
-          </article>
-
-          <article class="guardian-card reveal reveal-delay-2">
-            <div class="guardian-photo-grid" aria-label="Fotos de Hash">
-              <button class="guardian-image-button lightbox-trigger" type="button" data-lightbox-group="hash" data-image="img/lobo1.jpeg" data-caption="Hash · Casa Lobos · Foto 1" aria-label="Abrir primera foto de Hash">
-                <img class="guardian-photo property-image" src="img/lobo1.jpeg" alt="Hash, guardián de Casa Lobos, foto 1" data-fallback-label="Primera foto de Hash" />
-                <span class="guardian-photo-number" aria-hidden="true">01</span>
-              </button>
-              <button class="guardian-image-button lightbox-trigger" type="button" data-lightbox-group="hash" data-image="img/lobo2.jpeg" data-caption="Hash · Casa Lobos · Foto 2" aria-label="Abrir segunda foto de Hash">
-                <img class="guardian-photo property-image" src="img/lobo2.jpeg" alt="Hash, guardián de Casa Lobos, foto 2" data-fallback-label="Segunda foto de Hash" />
-                <span class="guardian-photo-number" aria-hidden="true">02</span>
-              </button>
-              <span class="guardian-tag">MACHO</span>
-            </div>
-            <div class="guardian-card-copy">
-              <p class="guardian-kicker">Nuestro guardián</p>
-              <h3>Hash</h3>
-              <p>También forma parte de la bienvenida en Casa Lobos. Sus fotos se abren en grande desde cualquier dispositivo.</p>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="rules-section section" id="reglas">
-      <div class="rules-inner container">
-        <div class="rules-copy reveal">
-          <p class="eyebrow eyebrow-light"><span></span> Para todos</p>
-          <h2>Buenas reglas,<br><em>buenos recuerdos.</em></h2>
-          <p>Casa Lobos es un espacio de aire libre. Estas reglas ayudan a que cada grupo disfrute el terreno con libertad, seguridad y respeto por el lugar.</p>
-        </div>
-        <div class="rules-list reveal reveal-delay">
-          <article><span>01</span><div><h3>Cuida Casa Lobos</h3><p>Respeta instalaciones, áreas verdes, mobiliario y cualquier zona que se indique como privada o no disponible.</p></div></article>
-          <article><span>02</span><div><h3>Convivencia al aire libre</h3><p>Disfruta la música y la reunión con consideración hacia tu grupo, los guardianes y el entorno rural. No hay una regla estricta de ruido, pero evita excesos que afecten la experiencia.</p></div></article>
-          <article><span>03</span><div><h3>Basura en su lugar</h3><p>Recoge residuos, utiliza los contenedores asignados y deja el espacio en buenas condiciones al finalizar tu visita.</p></div></article>
-          <article><span>04</span><div><h3>Cuida el entorno</h3><p>No cortes plantas, no dañes áreas naturales y mantén vehículos únicamente en las zonas que se indiquen para estacionamiento o circulación.</p></div></article>
-          <article><span>05</span><div><h3>Respeta a los guardianes</h3><p>No los alimentes ni los sueltes sin autorización. Sigue las indicaciones sobre portones, convivencia y áreas destinadas para ellos.</p></div></article>
-          <article><span>06</span><div><h3>Consulta antes de confirmar</h3><p>Informa el número de personas, tipo de reunión, invitados extra, mascotas, equipo especial o cualquier actividad adicional antes de reservar.</p></div></article>
-        </div>
-      </div>
-    </section>
-
-    <section class="reservation-section section container" id="contacto">
-      <div class="reservation-card reveal">
-        <div class="reservation-copy">
-          <p class="eyebrow"><span></span> Reservaciones</p>
-          <h2>Muy pronto podrás<br>apartar tu <em>fecha.</em></h2>
-          <p>Estamos afinando los últimos detalles de Casa Lobos. Cuando la agenda esté disponible, podrás consultar fechas por WhatsApp o correo desde este mismo sitio.</p>
-        </div>
-        <div class="reservation-action">
-          <button class="booking-button booking-button-large is-disabled" id="bookingButtonBottom" type="button" aria-disabled="true">
-            <span class="booking-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none"><path d="M7 3v3M17 3v3M4 9h16M5.5 5h13A1.5 1.5 0 0 1 20 6.5v12a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 4 18.5v-12A1.5 1.5 0 0 1 5.5 5Z" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
-            </span>
-            <span class="booking-label">Reservas próximamente</span>
-          </button>
-          <small>El botón se habilitará al abrir agenda.</small>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container footer-content">
-      <a class="brand brand-footer" href="#inicio" aria-label="Casa Lobos, inicio">
-        <span class="brand-mark" aria-hidden="true">C</span>
-        <span>CASA <em>LOBOS</em></span>
+      <a class="text-link" href="#espacio">
+       <span data-i18n="knowCasa">
+        Conoce Casa Lobos
+       </span>
+       <span aria-hidden="true">
+        &searrow;
+       </span>
       </a>
-      <p>Un espacio privado para disfrutar el aire libre del Valle de Ensenada.</p>
-      <div class="footer-links">
-        <a href="#espacio">El lugar</a>
-        <a href="#ubicacion">Ubicación</a>
-        <a href="#guardianes">Guardianes</a>
-        <a href="#reglas">Reglas</a>
-        <a href="#contacto">Contacto</a>
+     </div>
+     <p class="availability-note">
+      <span aria-hidden="true" class="status-dot">
+      </span>
+      <span data-i18n="availabilityNote">
+       Estamos preparando todo para recibirte.
+      </span>
+     </p>
+    </div>
+    <div class="hero-visual reveal reveal-delay">
+     <div class="hero-photo-wrap">
+      <img alt="Vista principal de Casa Lobos" class="property-image" data-fallback-label="Foto principal de Casa Lobos" data-i18n-alt="heroImageAlt" data-i18n-fallback-label="heroFallback" src="img/pic1.png"/>
+      <div class="photo-overlay">
       </div>
+      <div class="hero-location-card">
+       <svg aria-hidden="true" fill="none" viewbox="0 0 24 24">
+        <path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z" stroke="currentColor" stroke-width="1.6">
+        </path>
+        <circle cx="12" cy="10" r="2.5" stroke="currentColor" stroke-width="1.6">
+        </circle>
+       </svg>
+       <span data-i18n="heroLocation">
+        Valle de Ensenada &middot; Zona rural
+       </span>
+      </div>
+     </div>
+     <div aria-hidden="true" class="hero-stamp">
+      <span>
+       CASA LOBOS
+      </span>
+      <span>
+       &middot;
+      </span>
+      <span>
+       VALLE
+      </span>
+      <span>
+       &middot;
+      </span>
+      <span>
+       CASA LOBOS
+      </span>
+      <span>
+       &middot;
+      </span>
+      <span>
+       VALLE
+      </span>
+      <span>
+       &middot;
+      </span>
+     </div>
     </div>
-    <div class="container footer-bottom">
-      <span>© <span id="currentYear"></span> Casa Lobos. Todos los derechos reservados.</span>
-      <span>Valle de Ensenada · Zona rural</span>
+   </section>
+  </header>
+  <main id="contenido">
+   <section class="intro section container" id="espacio">
+    <div class="intro-side reveal">
+     <p class="eyebrow">
+      <span aria-hidden="true" class="eyebrow-line">
+      </span>
+      <span class="eyebrow-text" data-i18n="placeEyebrow">
+       El lugar
+      </span>
+     </p>
+     <h2>
+      <span data-i18n="placeTitleLine1">
+       Respira, comparte
+      </span>
+      <br/>
+      <span data-i18n="placeTitleLine2">
+       y hazlo
+      </span>
+      <em data-i18n="placeTitleAccent">
+       tuyo.
+      </em>
+     </h2>
     </div>
+    <div class="intro-content reveal reveal-delay">
+     <p class="lead" data-i18n="placeLead">
+      Casa Lobos es un espacio privado en la zona rural del Valle de Ensenada, pensado para esas reuniones que se disfrutan sin prisas y con el paisaje como parte del plan.
+     </p>
+     <p data-i18n="placeBody">
+      Tierra Santa se utiliza por ahora como referencia de la zona. En la secci&oacute;n de ubicaci&oacute;n podr&aacute;s consultar el punto de llegada en Google Maps; al confirmar una reservaci&oacute;n se compartir&aacute;n indicaciones de acceso, capacidad, precios y horarios.
+     </p>
+     <div class="quick-details">
+      <div>
+       <strong data-i18n="detail1Title">
+        Entorno rural
+       </strong>
+       <span data-i18n="detail1Text">
+        Aire libre y paisaje del valle
+       </span>
+      </div>
+      <div>
+       <strong data-i18n="detail2Title">
+        Espacio privado
+       </strong>
+       <span data-i18n="detail2Text">
+        Convivencia a tu propio ritmo
+       </span>
+      </div>
+      <div>
+       <strong data-i18n="detail3Title">
+        Reservaci&oacute;n previa
+       </strong>
+       <span data-i18n="detail3Text">
+        Disponibilidad por confirmar
+       </span>
+      </div>
+     </div>
+    </div>
+   </section>
+   <section class="location-section section" id="ubicacion">
+    <div class="container">
+     <div class="location-card reveal">
+      <div class="location-copy">
+       <p class="eyebrow eyebrow-light">
+        <span aria-hidden="true" class="eyebrow-line">
+        </span>
+        <span class="eyebrow-text" data-i18n="locationEyebrow">
+         Ubicaci&oacute;n
+        </span>
+       </p>
+       <h2>
+        <span data-i18n="locationTitleLine1">
+         Encuentra el camino
+        </span>
+        <br/>
+        <span data-i18n="locationTitleLine2">
+         hacia
+        </span>
+        <em data-i18n="locationTitleAccent">
+         Casa Lobos.
+        </em>
+       </h2>
+       <p data-i18n="locationText">
+        Casa Lobos se encuentra en la zona rural del Valle de Ensenada, cerca de Tierra Santa. Consulta el punto de llegada y planea tu visita con anticipaci&oacute;n.
+       </p>
+       <div aria-label="Detalles de ubicaci&oacute;n" class="location-details">
+        <div>
+         <svg aria-hidden="true" fill="none" viewbox="0 0 24 24">
+          <path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z" stroke="currentColor" stroke-width="1.65">
+          </path>
+          <circle cx="12" cy="10" r="2.5" stroke="currentColor" stroke-width="1.65">
+          </circle>
+         </svg>
+         <span>
+          <span data-i18n="locationDetail1Title">
+           Valle de Ensenada
+          </span>
+          <br/>
+          <small data-i18n="locationDetail1Text">
+           Zona rural &middot; Tierra Santa
+          </small>
+         </span>
+        </div>
+        <div>
+         <svg aria-hidden="true" fill="none" viewbox="0 0 24 24">
+          <path d="M4 5h16M4 12h16M4 19h16" stroke="currentColor" stroke-linecap="round" stroke-width="1.65">
+          </path>
+          <path d="M7 3v4M12 10v4M17 17v4" stroke="currentColor" stroke-linecap="round" stroke-width="1.65">
+          </path>
+         </svg>
+         <span>
+          <span data-i18n="locationDetail2Title">
+           Antes de salir
+          </span>
+          <br/>
+          <small data-i18n="locationDetail2Text">
+           Confirma acceso y detalles de tu visita
+          </small>
+         </span>
+        </div>
+       </div>
+       <a aria-label="Abrir ubicaci&oacute;n de Casa Lobos en Google Maps" class="map-button" data-i18n-aria-label="mapButtonAria" href="https://maps.app.goo.gl/JRZmJLSjW2W7Dti9A?g_st=aw" rel="noopener noreferrer" target="_blank">
+        <span data-i18n="mapButton">
+         Ver en Google Maps
+        </span>
+        <svg aria-hidden="true" fill="none" viewbox="0 0 24 24">
+         <path d="M7 17 17 7M9 7h8v8" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8">
+         </path>
+        </svg>
+       </a>
+      </div>
+      <div aria-label="Mapa de ubicaci&oacute;n de Casa Lobos" class="location-map" data-i18n-aria-label="locationMapAria">
+       <iframe allowfullscreen="" data-i18n-title="mapIframeTitle" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=32.0283165,-116.6355569&amp;z=15&amp;output=embed" title="Ubicaci&oacute;n de Casa Lobos en Google Maps">
+       </iframe>
+       <a aria-label="Abrir ubicaci&oacute;n en Google Maps" class="map-floating-label" data-i18n-aria-label="mapFloatingAria" href="https://maps.app.goo.gl/JRZmJLSjW2W7Dti9A?g_st=aw" rel="noopener noreferrer" target="_blank">
+        <span aria-hidden="true" class="map-floating-icon">
+         <svg fill="none" viewbox="0 0 24 24">
+          <path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z" stroke="currentColor" stroke-width="1.7">
+          </path>
+          <circle cx="12" cy="10" r="2.5" stroke="currentColor" stroke-width="1.7">
+          </circle>
+         </svg>
+        </span>
+        <span>
+         <strong data-i18n="mapFloatingTitle">
+          Casa Lobos
+         </strong>
+         <small data-i18n="mapFloatingText">
+          Abrir ubicaci&oacute;n
+         </small>
+        </span>
+       </a>
+      </div>
+     </div>
+    </div>
+   </section>
+   <section class="gallery-section section" id="galeria">
+    <div class="container">
+     <div class="section-heading reveal">
+      <div>
+       <p class="eyebrow">
+        <span aria-hidden="true" class="eyebrow-line">
+        </span>
+        <span class="eyebrow-text" data-i18n="galleryEyebrow">
+         Galer&iacute;a
+        </span>
+       </p>
+       <h2>
+        <span data-i18n="galleryTitleLine1">
+         Una primera mirada
+        </span>
+        <br/>
+        <span data-i18n="galleryTitleLine2">
+         a
+        </span>
+        <em data-i18n="galleryTitleAccent">
+         Casa Lobos.
+        </em>
+       </h2>
+      </div>
+      <p data-i18n="galleryText">
+       Estos espacios quedan listos para mostrar los rincones reales del terreno: acceso, &aacute;reas de convivencia, vista general y esos atardeceres que hacen especial al valle.
+      </p>
+     </div>
+     <div class="gallery-grid">
+      <button class="gallery-item lightbox-trigger gallery-item-large reveal" data-caption="Vista general de Casa Lobos" data-i18n-caption="gallery1Caption" data-image="img/pic1.png" data-lightbox-group="gallery" type="button">
+       <img alt="Vista general de Casa Lobos" class="property-image" data-fallback-label="Vista general de Casa Lobos" data-i18n-alt="gallery1Alt" data-i18n-fallback-label="gallery1Fallback" src="img/pic1.png"/>
+       <span class="gallery-label">
+        <span data-i18n="gallery1Label">
+         Vista general
+        </span>
+        <i>
+         &nearrow;
+        </i>
+       </span>
+      </button>
+      <button class="gallery-item lightbox-trigger gallery-item-large reveal" data-caption="Garage de Casa Lobos" data-i18n-caption="gallery2Caption" data-image="img/pic3.jpeg" data-lightbox-group="gallery" type="button">
+       <img alt="Vista general de Casa Lobos" class="property-image" data-fallback-label="Vista general de Casa Lobos" data-i18n-alt="gallery2Alt" data-i18n-fallback-label="gallery2Fallback" src="img/pic3.jpeg"/>
+       <span class="gallery-label">
+        <span data-i18n="gallery2Label">
+         Garage
+        </span>
+        <i>
+         &nearrow;
+        </i>
+       </span>
+      </button>
+      <button class="gallery-item lightbox-trigger reveal reveal-delay-1" data-caption="&Aacute;rea exterior" data-i18n-caption="gallery3Caption" data-image="img/pic2.jpeg" data-lightbox-group="gallery" type="button">
+       <img alt="&Aacute;rea exterior de Casa Lobos" class="property-image" data-fallback-label="&Aacute;rea exterior" data-i18n-alt="gallery3Alt" data-i18n-fallback-label="gallery3Fallback" src="img/pic2.jpeg"/>
+       <span class="gallery-label">
+        <span data-i18n="gallery3Label">
+         &Aacute;rea exterior
+        </span>
+        <i>
+         &nearrow;
+        </i>
+       </span>
+      </button>
+      <button class="gallery-item lightbox-trigger reveal reveal-delay-2" data-caption="Un rinc&oacute;n para convivir" data-i18n-caption="gallery4Caption" data-image="img/pic5.jpeg" data-lightbox-group="gallery" type="button">
+       <img alt="Rinc&oacute;n de convivencia en Casa Lobos" class="property-image" data-fallback-label="Rinc&oacute;n para convivir" data-i18n-alt="gallery4Alt" data-i18n-fallback-label="gallery4Fallback" src="img/pic5.jpeg"/>
+       <span class="gallery-label">
+        <span data-i18n="gallery4Label">
+         Rinc&oacute;n especial
+        </span>
+        <i>
+         &nearrow;
+        </i>
+       </span>
+      </button>
+      <button class="gallery-item lightbox-trigger gallery-item-wide reveal" data-caption="Momentos especiales en el valle" data-i18n-caption="gallery5Caption" data-image="img/pic4.jpeg" data-lightbox-group="gallery" type="button">
+       <img alt="Atardecer en Casa Lobos" class="property-image" data-fallback-label="Atardeceres del valle" data-i18n-alt="gallery5Alt" data-i18n-fallback-label="gallery5Fallback" src="img/pic4.jpeg"/>
+       <span class="gallery-label">
+        <span data-i18n="gallery5Label">
+         Momentos especiales
+        </span>
+        <i>
+         &nearrow;
+        </i>
+       </span>
+      </button>
+     </div>
+    </div>
+   </section>
+   <section class="amenities section container" id="equipamiento">
+    <div class="amenities-top reveal">
+     <p class="eyebrow">
+      <span aria-hidden="true" class="eyebrow-line">
+      </span>
+      <span class="eyebrow-text" data-i18n="amenitiesEyebrow">
+       Equipamiento
+      </span>
+     </p>
+     <h2>
+      <span data-i18n="amenitiesTitleLine1">
+       Lo que encontrar&aacute;s
+      </span>
+      <br/>
+      <span data-i18n="amenitiesTitleLine2">
+       en tu
+      </span>
+      <em data-i18n="amenitiesTitleAccent">
+       visita.
+      </em>
+     </h2>
+     <p data-i18n="amenitiesText">
+      Esta secci&oacute;n queda lista para mostrar con claridad todo lo que se incluye en Casa Lobos. Cuando definan cada detalle real, sustituimos estas descripciones.
+     </p>
+    </div>
+    <div class="amenities-grid">
+     <article class="amenity-card reveal">
+      <span class="amenity-number">
+       01
+      </span>
+      <div class="amenity-icon">
+       <svg fill="none" viewbox="0 0 24 24">
+        <path d="M4 20V9l8-5 8 5v11M8 20v-5h8v5" stroke="currentColor" stroke-linejoin="round" stroke-width="1.5">
+        </path>
+       </svg>
+      </div>
+      <h3 data-i18n="amenity1Title">
+       &Aacute;reas del terreno
+      </h3>
+      <p data-i18n="amenity1Text">
+       Agrega aqu&iacute; las zonas disponibles: &aacute;rea principal, jard&iacute;n, parte techada, sal&oacute;n, terraza o cualquier rinc&oacute;n especial.
+      </p>
+     </article>
+     <article class="amenity-card reveal reveal-delay-1">
+      <span class="amenity-number">
+       02
+      </span>
+      <div class="amenity-icon">
+       <svg fill="none" viewbox="0 0 24 24">
+        <path d="M12 3v18M3 12h18M5.6 5.6l12.8 12.8M18.4 5.6 5.6 18.4" stroke="currentColor" stroke-linecap="round" stroke-width="1.5">
+        </path>
+       </svg>
+      </div>
+      <h3 data-i18n="amenity2Title">
+       Convivencia
+      </h3>
+      <p data-i18n="amenity2Text">
+       Mesas, sillas, asador, fogatero, alberca, juegos o cualquier elemento que haga c&oacute;moda la reuni&oacute;n.
+      </p>
+     </article>
+     <article class="amenity-card reveal reveal-delay-2">
+      <span class="amenity-number">
+       03
+      </span>
+      <div class="amenity-icon">
+       <svg fill="none" viewbox="0 0 24 24">
+        <path d="M4 19.5 12 4l8 15.5M7.25 14h9.5" stroke="currentColor" stroke-linejoin="round" stroke-width="1.5">
+        </path>
+       </svg>
+      </div>
+      <h3 data-i18n="amenity3Title">
+       Servicios b&aacute;sicos
+      </h3>
+      <p data-i18n="amenity3Text">
+       Incluye informaci&oacute;n confirmada sobre ba&ntilde;o, agua, electricidad, estacionamiento, se&ntilde;al o internet.
+      </p>
+     </article>
+     <article class="amenity-card reveal reveal-delay-3">
+      <span class="amenity-number">
+       04
+      </span>
+      <div class="amenity-icon">
+       <svg fill="none" viewbox="0 0 24 24">
+        <path d="M3 10.5 12 4l9 6.5M5 9v10h14V9M9 19v-5h6v5" stroke="currentColor" stroke-linejoin="round" stroke-width="1.5">
+        </path>
+       </svg>
+      </div>
+      <h3 data-i18n="amenity4Title">
+       Llegada y acceso
+      </h3>
+      <p data-i18n="amenity4Text">
+       Indicaciones de llegada, port&oacute;n, estacionamiento y puntos importantes se comparten antes de la visita.
+      </p>
+     </article>
+    </div>
+   </section>
+   <section class="guardians-section section" id="guardianes">
+    <div class="container guardians-layout">
+     <div class="guardians-copy reveal">
+      <p class="eyebrow">
+       <span aria-hidden="true" class="eyebrow-line">
+       </span>
+       <span class="eyebrow-text" data-i18n="guardiansEyebrow">
+        Casa Lobos
+       </span>
+      </p>
+      <h2>
+       <span data-i18n="guardiansTitleLine1">
+        Conoce a nuestros
+       </span>
+       <br/>
+       <em data-i18n="guardiansTitleAccent">
+        guardianes.
+       </em>
+      </h2>
+      <p data-i18n="guardiansText">
+       Ellos tambi&eacute;n son parte de Casa Lobos. Al llegar, encontrar&aacute;s a una hembra y un macho que cuidan el espacio y le dan personalidad al lugar.
+      </p>
+      <p class="guardians-note" data-i18n="guardiansNote">
+       Toca cualquier foto para verla completa. Cada guardi&aacute;n cuenta con dos espacios para mostrar sus mejores momentos.
+      </p>
+     </div>
+     <div class="guardian-cards">
+      <article class="guardian-card reveal reveal-delay-1">
+       <div aria-label="Fotos de Jesusa" class="guardian-photo-grid">
+        <button aria-label="Abrir primera foto de Jesusa" class="guardian-image-button lightbox-trigger" data-caption="Jesusa &middot; Casa Lobos &middot; Foto 1" data-i18n-aria-label="guardian1Photo1Aria" data-i18n-caption="guardian1Photo1Caption" data-image="img/loba1.jpeg" data-lightbox-group="jesusa" type="button">
+         <img alt="Jesusa, guardiana de Casa Lobos, foto 1" class="guardian-photo property-image" data-fallback-label="Primera foto de Jesusa" data-i18n-alt="guardian1Photo1Alt" data-i18n-fallback-label="guardian1Photo1Fallback" src="img/loba1.jpeg"/>
+         <span aria-hidden="true" class="guardian-photo-number">
+          01
+         </span>
+        </button>
+        <button aria-label="Abrir segunda foto de Jesusa" class="guardian-image-button lightbox-trigger" data-caption="Jesusa &middot; Casa Lobos &middot; Foto 2" data-i18n-aria-label="guardian1Photo2Aria" data-i18n-caption="guardian1Photo2Caption" data-image="img/loba2.jpeg" data-lightbox-group="jesusa" type="button">
+         <img alt="Jesusa, guardiana de Casa Lobos, foto 2" class="guardian-photo property-image" data-fallback-label="Segunda foto de Jesusa" data-i18n-alt="guardian1Photo2Alt" data-i18n-fallback-label="guardian1Photo2Fallback" src="img/loba2.jpeg"/>
+         <span aria-hidden="true" class="guardian-photo-number">
+          02
+         </span>
+        </button>
+        <span class="guardian-tag" data-i18n="guardian1Sex">
+         HEMBRA
+        </span>
+       </div>
+       <div class="guardian-card-copy">
+        <p class="guardian-kicker" data-i18n="guardian1Kicker">
+         Nuestra guardiana
+        </p>
+        <h3>
+         Jesusa
+        </h3>
+        <p data-i18n="guardian1Text">
+         Una de las anfitrionas de Casa Lobos. Sus dos fotos se pueden abrir a tama&ntilde;o completo para conocerla mejor.
+        </p>
+       </div>
+      </article>
+      <article class="guardian-card reveal reveal-delay-2">
+       <div aria-label="Fotos de Hash" class="guardian-photo-grid">
+        <button aria-label="Abrir primera foto de Hash" class="guardian-image-button lightbox-trigger" data-caption="Hash &middot; Casa Lobos &middot; Foto 1" data-i18n-aria-label="guardian2Photo1Aria" data-i18n-caption="guardian2Photo1Caption" data-image="img/lobo1.jpeg" data-lightbox-group="hash" type="button">
+         <img alt="Hash, guardi&aacute;n de Casa Lobos, foto 1" class="guardian-photo property-image" data-fallback-label="Primera foto de Hash" data-i18n-alt="guardian2Photo1Alt" data-i18n-fallback-label="guardian2Photo1Fallback" src="img/lobo1.jpeg"/>
+         <span aria-hidden="true" class="guardian-photo-number">
+          01
+         </span>
+        </button>
+        <button aria-label="Abrir segunda foto de Hash" class="guardian-image-button lightbox-trigger" data-caption="Hash &middot; Casa Lobos &middot; Foto 2" data-i18n-aria-label="guardian2Photo2Aria" data-i18n-caption="guardian2Photo2Caption" data-image="img/lobo2.jpeg" data-lightbox-group="hash" type="button">
+         <img alt="Hash, guardi&aacute;n de Casa Lobos, foto 2" class="guardian-photo property-image" data-fallback-label="Segunda foto de Hash" data-i18n-alt="guardian2Photo2Alt" data-i18n-fallback-label="guardian2Photo2Fallback" src="img/lobo2.jpeg"/>
+         <span aria-hidden="true" class="guardian-photo-number">
+          02
+         </span>
+        </button>
+        <span class="guardian-tag" data-i18n="guardian2Sex">
+         MACHO
+        </span>
+       </div>
+       <div class="guardian-card-copy">
+        <p class="guardian-kicker" data-i18n="guardian2Kicker">
+         Nuestro guardi&aacute;n
+        </p>
+        <h3>
+         Hash
+        </h3>
+        <p data-i18n="guardian2Text">
+         Tambi&eacute;n forma parte de la bienvenida en Casa Lobos. Sus fotos se abren en grande desde cualquier dispositivo.
+        </p>
+       </div>
+      </article>
+     </div>
+    </div>
+   </section>
+   <section class="rules-section section" id="reglas">
+    <div class="rules-inner container">
+     <div class="rules-copy reveal">
+      <p class="eyebrow eyebrow-light">
+       <span aria-hidden="true" class="eyebrow-line">
+       </span>
+       <span class="eyebrow-text" data-i18n="rulesEyebrow">
+        Para todos
+       </span>
+      </p>
+      <h2>
+       <span data-i18n="rulesTitleLine1">
+        Buenas reglas,
+       </span>
+       <br/>
+       <em data-i18n="rulesTitleAccent">
+        buenos recuerdos.
+       </em>
+      </h2>
+      <p data-i18n="rulesText">
+       Casa Lobos es un espacio de aire libre. Estas reglas ayudan a que cada grupo disfrute el terreno con libertad, seguridad y respeto por el lugar.
+      </p>
+     </div>
+     <div class="rules-list reveal reveal-delay">
+      <article>
+       <span>
+        01
+       </span>
+       <div>
+        <h3 data-i18n="rule1Title">
+         Cuida Casa Lobos
+        </h3>
+        <p data-i18n="rule1Text">
+         Respeta instalaciones, &aacute;reas verdes, mobiliario y cualquier zona que se indique como privada o no disponible.
+        </p>
+       </div>
+      </article>
+      <article>
+       <span>
+        02
+       </span>
+       <div>
+        <h3 data-i18n="rule2Title">
+         Convivencia al aire libre
+        </h3>
+        <p data-i18n="rule2Text">
+         Disfruta la m&uacute;sica y la reuni&oacute;n con consideraci&oacute;n hacia tu grupo, los guardianes y el entorno rural. No hay una regla estricta de ruido, pero evita excesos que afecten la experiencia.
+        </p>
+       </div>
+      </article>
+      <article>
+       <span>
+        03
+       </span>
+       <div>
+        <h3 data-i18n="rule3Title">
+         Basura en su lugar
+        </h3>
+        <p data-i18n="rule3Text">
+         Recoge residuos, utiliza los contenedores asignados y deja el espacio en buenas condiciones al finalizar tu visita.
+        </p>
+       </div>
+      </article>
+      <article>
+       <span>
+        04
+       </span>
+       <div>
+        <h3 data-i18n="rule4Title">
+         Cuida el entorno
+        </h3>
+        <p data-i18n="rule4Text">
+         No cortes plantas, no da&ntilde;es &aacute;reas naturales y mant&eacute;n veh&iacute;culos &uacute;nicamente en las zonas que se indiquen para estacionamiento o circulaci&oacute;n.
+        </p>
+       </div>
+      </article>
+      <article>
+       <span>
+        05
+       </span>
+       <div>
+        <h3 data-i18n="rule5Title">
+         Respeta a los guardianes
+        </h3>
+        <p data-i18n="rule5Text">
+         No los alimentes ni los sueltes sin autorizaci&oacute;n. Sigue las indicaciones sobre portones, convivencia y &aacute;reas destinadas para ellos.
+        </p>
+       </div>
+      </article>
+      <article>
+       <span>
+        06
+       </span>
+       <div>
+        <h3 data-i18n="rule6Title">
+         Consulta antes de confirmar
+        </h3>
+        <p data-i18n="rule6Text">
+         Informa el n&uacute;mero de personas, tipo de reuni&oacute;n, invitados extra, mascotas, equipo especial o cualquier actividad adicional antes de reservar.
+        </p>
+       </div>
+      </article>
+     </div>
+    </div>
+   </section>
+   <section class="reservation-section section container" id="contacto">
+    <div class="reservation-card reveal">
+     <div class="reservation-copy">
+      <p class="eyebrow">
+       <span aria-hidden="true" class="eyebrow-line">
+       </span>
+       <span class="eyebrow-text" data-i18n="reservationEyebrow">
+        Reservaciones
+       </span>
+      </p>
+      <h2>
+       <span data-i18n="reservationTitleLine1">
+        Muy pronto podr&aacute;s
+       </span>
+       <br/>
+       <span data-i18n="reservationTitleLine2">
+        apartar tu
+       </span>
+       <em data-i18n="reservationTitleAccent">
+        fecha.
+       </em>
+      </h2>
+      <p data-i18n="reservationText">
+       Estamos afinando los &uacute;ltimos detalles de Casa Lobos. Cuando la agenda est&eacute; disponible, podr&aacute;s consultar fechas por WhatsApp o correo desde este mismo sitio.
+      </p>
+     </div>
+     <div class="reservation-action">
+      <button aria-disabled="true" class="booking-button booking-button-large is-disabled" id="bookingButtonBottom" type="button">
+       <span aria-hidden="true" class="booking-icon">
+        <svg fill="none" viewbox="0 0 24 24">
+         <path d="M7 3v3M17 3v3M4 9h16M5.5 5h13A1.5 1.5 0 0 1 20 6.5v12a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 4 18.5v-12A1.5 1.5 0 0 1 5.5 5Z" stroke="currentColor" stroke-linecap="round" stroke-width="1.7">
+         </path>
+        </svg>
+       </span>
+       <span class="booking-label" data-i18n="bookingSoon">
+        Reservas pr&oacute;ximamente
+       </span>
+      </button>
+      <small data-i18n="bookingNote">
+       El bot&oacute;n se habilitar&aacute; al abrir agenda.
+      </small>
+     </div>
+    </div>
+   </section>
+  </main>
+  <footer class="site-footer">
+   <div class="container footer-content">
+    <a aria-label="Casa Lobos, inicio" class="brand brand-footer" data-i18n-aria-label="brandAria" href="#inicio">
+     <span aria-hidden="true" class="brand-mark">
+      C
+     </span>
+     <span>
+      CASA
+      <em>
+       LOBOS
+      </em>
+     </span>
+    </a>
+    <p data-i18n="footerText">
+     Un espacio privado para disfrutar el aire libre del Valle de Ensenada.
+    </p>
+    <div class="footer-links">
+     <a data-i18n="navPlace" href="#espacio">
+      El lugar
+     </a>
+     <a data-i18n="navLocation" href="#ubicacion">
+      Ubicaci&oacute;n
+     </a>
+     <a data-i18n="navGuardians" href="#guardianes">
+      Guardianes
+     </a>
+     <a data-i18n="navRules" href="#reglas">
+      Reglas
+     </a>
+     <a data-i18n="navContact" href="#contacto">
+      Contacto
+     </a>
+    </div>
+   </div>
+   <div class="container footer-bottom">
+    <span>
+     <span data-i18n="footerCopyrightSymbol">
+      &copy;
+     </span>
+     <span id="currentYear">
+     </span>
+     <span data-i18n="footerCopyrightText">
+      Casa Lobos. Todos los derechos reservados.
+     </span>
+    </span>
+    <span data-i18n="footerLocation">
+     Valle de Ensenada &middot; Zona rural
+    </span>
+   </div>
   </footer>
-
-  <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Vista ampliada de imagen">
-    <button class="lightbox-close" type="button" aria-label="Cerrar galería">×</button>
-    <button class="lightbox-nav lightbox-prev" type="button" aria-label="Imagen anterior">‹</button>
-    <figure>
-      <img id="lightboxImage" src="" alt="" />
-      <figcaption id="lightboxCaption"></figcaption>
-    </figure>
-    <button class="lightbox-nav lightbox-next" type="button" aria-label="Imagen siguiente">›</button>
+  <div aria-hidden="true" aria-label="Vista ampliada de imagen" aria-modal="true" class="lightbox" data-i18n-aria-label="lightboxAria" id="lightbox" role="dialog">
+   <button aria-label="Cerrar galer&iacute;a" class="lightbox-close" data-i18n-aria-label="lightboxClose" type="button">
+    &times;
+   </button>
+   <button aria-label="Imagen anterior" class="lightbox-nav lightbox-prev" data-i18n-aria-label="lightboxPrev" type="button">
+    &lsaquo;
+   </button>
+   <figure>
+    <img alt="" id="lightboxImage" src=""/>
+    <figcaption id="lightboxCaption">
+    </figcaption>
+   </figure>
+   <button aria-label="Imagen siguiente" class="lightbox-nav lightbox-next" data-i18n-aria-label="lightboxNext" type="button">
+    &rsaquo;
+   </button>
   </div>
-
-  <div class="toast" id="toast" role="status" aria-live="polite">Las reservaciones estarán disponibles muy pronto.</div>
-
-  <script src="app.js"></script>
-</body>
+  <div aria-live="polite" class="toast" data-i18n="bookingSoonToast" id="toast" role="status">
+   Las reservaciones estar&aacute;n disponibles muy pronto.
+  </div>
+  <script src="app.js">
+  </script>
+ </body>
 </html>

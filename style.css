@@ -277,3 +277,247 @@ h2 { margin-bottom: 0; font-size: clamp(40px, 4.25vw, 62px); }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
 }
+
+/* =========================================================
+   Navegación fija + selector de idioma
+   ========================================================= */
+html {
+  scroll-padding-top: 112px;
+}
+
+/* El texto traducible del eyebrow conserva su línea decorativa. */
+.eyebrow > .eyebrow-line {
+  width: 31px;
+  height: 1px;
+  display: inline-block;
+  flex: 0 0 auto;
+  background: currentColor;
+}
+
+.eyebrow > .eyebrow-text {
+  width: auto;
+  height: auto;
+  display: inline;
+  background: transparent;
+}
+
+.nav {
+  position: fixed;
+  top: 16px;
+  left: 50%;
+  z-index: 500;
+  width: min(calc(100% - 48px), var(--container));
+  min-height: 72px;
+  margin: 0;
+  padding: 0 22px;
+  border: 1px solid rgba(23, 33, 22, .12);
+  border-radius: 17px;
+  background: rgba(248, 246, 240, .9);
+  box-shadow: 0 14px 34px rgba(23, 33, 22, .11);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  transform: translateX(-50%);
+}
+
+.nav-links {
+  margin-left: auto;
+  gap: clamp(13px, 1.55vw, 25px);
+  font-size: 12px;
+}
+
+.nav-controls {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  margin-left: 16px;
+  flex: 0 0 auto;
+}
+
+.language-toggle {
+  min-width: 45px;
+  min-height: 38px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  padding: 7px 10px;
+  border: 1px solid rgba(23, 33, 22, .16);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, .67);
+  color: var(--ink);
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: .08em;
+  line-height: 1;
+  transition: transform .22s ease, background .22s ease, border-color .22s ease, box-shadow .22s ease;
+}
+
+.language-toggle:hover,
+.language-toggle:focus-visible {
+  border-color: rgba(23, 33, 22, .42);
+  background: #fff;
+  box-shadow: 0 7px 17px rgba(23, 33, 22, .09);
+  transform: translateY(-1px);
+}
+
+.language-toggle:focus-visible,
+.menu-toggle:focus-visible {
+  outline: 3px solid rgba(182, 160, 96, .72);
+  outline-offset: 3px;
+}
+
+.language-icon {
+  position: relative;
+  display: inline-grid;
+  place-items: center;
+  width: 15px;
+  height: 15px;
+  border: 1px solid currentColor;
+  border-radius: 50%;
+  font-size: 0;
+  opacity: .78;
+}
+
+.language-icon::before,
+.language-icon::after {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 11px;
+  background: currentColor;
+  opacity: .78;
+}
+
+.language-icon::after {
+  width: 11px;
+  height: 1px;
+}
+
+.language-toggle-label {
+  min-width: 15px;
+  text-align: center;
+}
+
+.site-header .hero {
+  padding-top: 154px;
+}
+
+/* En pantallas medianas y móviles, los links pasan a un menú desplegable
+   y la barra fija conserva tanto el idioma como la navegación. */
+@media (max-width: 1080px) {
+  .nav {
+    top: 10px;
+    min-height: 68px;
+    padding-inline: 18px;
+  }
+
+  .site-header .hero {
+    padding-top: 144px;
+  }
+
+  .menu-toggle {
+    display: block;
+    position: relative;
+    z-index: 12;
+  }
+
+  .nav-links {
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
+    position: absolute;
+    top: calc(100% + 9px);
+    left: 0;
+    width: 100%;
+    max-height: calc(100vh - 92px);
+    margin: 0;
+    padding: 16px 19px;
+    overflow-y: auto;
+    border: 1px solid rgba(23, 33, 22, .12);
+    border-radius: 15px;
+    background: rgba(248, 246, 240, .98);
+    box-shadow: 0 18px 36px rgba(23, 33, 22, .13);
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity .22s ease, transform .22s ease, visibility .22s ease;
+  }
+
+  .nav-links.open {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .nav-links a {
+    width: 100%;
+    padding: 10px 2px;
+    font-size: 13px;
+  }
+
+  .nav-links a::after {
+    bottom: 5px;
+  }
+
+  .nav-controls {
+    margin-left: auto;
+  }
+}
+
+@media (max-width: 680px) {
+  html {
+    scroll-padding-top: 94px;
+  }
+
+  .nav {
+    top: 8px;
+    width: calc(100% - 20px);
+    min-height: 64px;
+    padding-inline: 14px;
+    border-radius: 15px;
+  }
+
+  .brand {
+    gap: 8px;
+    font-size: 10px;
+    letter-spacing: .13em;
+  }
+
+  .brand-mark {
+    width: 28px;
+    font-size: 16px;
+  }
+
+  .nav-controls {
+    gap: 4px;
+    margin-left: auto;
+  }
+
+  .language-toggle {
+    min-width: 42px;
+    min-height: 35px;
+    padding: 6px 8px;
+  }
+
+  .menu-toggle {
+    padding: 8px 0 8px 8px;
+  }
+
+  .site-header .hero {
+    padding-top: 127px;
+  }
+
+  .nav-links {
+    top: calc(100% + 8px);
+    padding: 14px 17px;
+    border-radius: 13px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .language-toggle,
+  .nav-links {
+    transition: none !important;
+  }
+}
